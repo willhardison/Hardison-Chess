@@ -133,7 +133,7 @@ piecePositions = {
 
 CHECKMATE = float('inf')
 STALEMATE = 0
-DEPTH = 3
+DEPTH = 2
 
 
 def findRandomMove(validMoves):
@@ -230,7 +230,6 @@ def findMoveNegaMax(gs, validMoves, depth, turnMultiplier):
         gs.undoMove()
     return maxScore
 
-
 def findMoveNegaMaxAlphaBeta(gs, validMoves, depth, alpha, beta, turnMultiplier):
     global nextMove, counter
     counter += 1
@@ -256,6 +255,7 @@ def findMoveNegaMaxAlphaBeta(gs, validMoves, depth, alpha, beta, turnMultiplier)
 # postive is good for white
 
 def scoreBoard(gs):
+    
     if gs.board.is_checkmate():
         if gs.whiteToMove:
             return -CHECKMATE

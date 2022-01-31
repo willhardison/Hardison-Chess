@@ -1,4 +1,4 @@
-import chess
+# import chess
 import pygame as p
 import ChessEngine, WardChessAi
 
@@ -15,7 +15,7 @@ images = {}
 def loadImages ():
     pieces = ['wp','wK', 'wR','wB', 'wQ', 'wN', 'p', 'k', 'r','b', 'q', 'n']
     for piece in pieces:
-        images[piece] = p.image.load(f'/Users/willhardison/VSCODE/Projects/HardisonChess/ChessPieces/{piece}.png')
+        images[piece] = p.image.load(f'Projects/HardisonChess/ChessPieces/{piece}.png')
 
 def main ():
     
