@@ -4,15 +4,15 @@ So I have been interested in Chess for a while now, and thought it would be a fu
 
 ### Script BreakDown
 
-#### Chess
+#### Chess.py
 
 Chess.py is what you should run if you want to play the computer. This is where the rendering of the board, the movement of the pieces, and all the other UI jazz happens.
 
-#### ChessEngine
+#### ChessEngine.py
 
 ChessEngine.py is where all the logic of the game exists. Where moves are tracked, where moves are checked to see if they are legal, and other logic,
 
-#### ChessAI
+#### ChessAI.py
 
 ChessAI.py is where all the 'computer' logic is. This is where the computer evaluates the position, search through moves, and ultimately picks its best move
 
