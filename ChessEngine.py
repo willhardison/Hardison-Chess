@@ -6,6 +6,7 @@ from functools import lru_cache
 startPosition = chess.STARTING_FEN
 stalematePosition = "8/8/8/8/8/3K4/3Q4/k7 w - - 0 1"
 testPosition = "8/8/p2BKP2/7p/7k/8/8/1r6 w - - 1 2"
+
 class gameState():
     def __init__(self):
         self.board = chess.Board(startPosition)
