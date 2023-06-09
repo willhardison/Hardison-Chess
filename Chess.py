@@ -1,7 +1,7 @@
 # import chess
 import pygame as p
 import ChessEngine
-import WardChessAi
+import ChessAi
 
 
 p.init()
@@ -97,9 +97,9 @@ def main():
         # AI
         if not gameOver and not humanTurn:
             if stockfish_bool == False:
-                aiMove = WardChessAi.findBestMove(gs, validMoves)
+                aiMove = ChessAi.findBestMove(gs, validMoves)
                 if aiMove == None:
-                    aiMove = WardChessAi.findRandomMove(validMoves)
+                    aiMove = ChessAi.findRandomMove(validMoves)
                 gs.makeMove(aiMove)
                 moveMade = True
                 animate = True
@@ -190,7 +190,7 @@ def drawGameState(screen, gs, validMoves, sq_Selected, moveLogFont):
 
 def drawBoard(screen):
     global colors
-    #colors = [p.Color("WhiteSmoke"), p.Color(165, 175, 180)]
+    # colors = [p.Color("WhiteSmoke"), p.Color(165, 175, 180)]
 
     # brown colors
     colors = [p.Color(245+10, 222+10, 179+10), p.Color(160+10, 100+10, 45+15)]

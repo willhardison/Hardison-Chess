@@ -1,9 +1,6 @@
 import chess
 import random
 import Chess
-from openpyxl import Workbook, load_workbook
-from functools import cache, lru_cache
-
 
 numberOfPositions = 0
 
